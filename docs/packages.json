@@ -1,0 +1,317 @@
+{
+    "packages": {
+        "rindow-annotation": {
+            "dev-master": {
+                "name": "rindow/rindow-annotation",
+                "type": "library",
+                "description": "Extract annotations from source code",
+                "keywords": [
+                    "rindow",
+                    "framework",
+                    "annotation"
+                ],
+                "license": "BSD-3-Clause",
+                "require": {
+                    "php": ">=5.3.3",
+                    "rindow/rindow-stdlib": "*",
+                    "interop-phpobjects/lenient-annotation": "*"
+                },
+                "require-dev": {
+                    "rindow/rindow-stdlib": "*",
+                    "interop-phpobjects/lenient-annotation": "*"
+                },
+                "autoload": {
+                    "psr-0": {
+                        "Rindow\\Annotation\\": "src/"
+                    }
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://rindow.github.io/rindow-packagist/packages.json",
+                        "options": {
+                            "ssl": {
+                                "verify_peer": "true"
+                            }
+                        }
+                    }
+                ],
+                "minimum-stability": "dev",
+                "version": "0.9.x-dev",
+                "dist": {
+                    "url": "https://github.com/rindow/rindow-annotation/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "rindow-aop": {
+            "dev-master": {
+                "name": "rindow/rindow-aop",
+                "type": "library",
+                "description": "Support Aspect Oriented Programming",
+                "keywords": [
+                    "rindow",
+                    "framework",
+                    "aop"
+                ],
+                "license": "BSD-3-Clause",
+                "require": {
+                    "php": ">=5.3.3",
+                    "rindow/rindow-event": "*",
+                    "rindow/rindow-container": "*",
+                    "rindow/rindow-stdlib": "*",
+                    "interop-phpobjects/lenient-aop": "*"
+                },
+                "require-dev": {
+                    "rindow/rindow-event": "*",
+                    "rindow/rindow-container": "*",
+                    "rindow/rindow-stdlib": "*",
+                    "rindow/rindow-annotation": "*"
+                },
+                "suggest": {
+                    "rindow/rindow-annotation": "When using annotation"
+                },
+                "autoload": {
+                    "psr-0": {
+                        "Rindow\\Aop\\": "src/"
+                    }
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://rindow.github.io/rindow-packagist/packages.json",
+                        "options": {
+                            "ssl": {
+                                "verify_peer": "true"
+                            }
+                        }
+                    }
+                ],
+                "minimum-stability": "dev",
+                "version": "0.9.x-dev",
+                "dist": {
+                    "url": "https://github.com/rindow/rindow-aop/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "rindow-container": {
+            "dev-master": {
+                "name": "rindow/rindow-container",
+                "type": "library",
+                "description": "Light weight Services container with dependency injection and module manager",
+                "keywords": [
+                    "rindow",
+                    "framework",
+                    "container",
+                    "di"
+                ],
+                "license": "BSD-3-Clause",
+                "require": {
+                    "php": ">=5.3.3",
+                    "psr/container": "^1.0",
+                    "rindow/rindow-stdlib": "*",
+                    "interop-phpobjects/lenient-container": "*"
+                },
+                "require-dev": {
+                    "rindow/rindow-stdlib": "*",
+                    "rindow/rindow-annotation": "*",
+                    "interop-phpobjects/lenient-container": "*"
+                },
+                "suggest": {
+                    "rindow/rindow-annotation": "When using annotation"
+                },
+                "autoload": {
+                    "psr-0": {
+                        "Rindow\\Container\\": "src/"
+                    }
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://rindow.github.io/rindow-packagist/packages.json",
+                        "options": {
+                            "ssl": {
+                                "verify_peer": "true"
+                            }
+                        }
+                    }
+                ],
+                "minimum-stability": "dev",
+                "version": "0.9.x-dev",
+                "dist": {
+                    "url": "https://github.com/rindow/rindow-container/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "rindow-event": {
+            "dev-master": {
+                "name": "rindow/rindow-event",
+                "type": "library",
+                "description": "Observer design pattern library",
+                "keywords": [
+                    "rindow",
+                    "framework",
+                    "event"
+                ],
+                "license": "BSD-3-Clause",
+                "require": {
+                    "php": ">=5.3.3",
+                    "rindow/rindow-stdlib": "*"
+                },
+                "require-dev": {
+                    "rindow/rindow-container": "*",
+                    "rindow/rindow-stdlib": "*"
+                },
+                "suggest": {
+                    "rindow/rindow-container": "When using service locator"
+                },
+                "autoload": {
+                    "psr-0": {
+                        "Rindow\\Event\\": "src/"
+                    }
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://rindow.github.io/rindow-packagist/packages.json",
+                        "options": {
+                            "ssl": {
+                                "verify_peer": "true"
+                            }
+                        }
+                    }
+                ],
+                "minimum-stability": "dev",
+                "version": "0.9.x-dev",
+                "dist": {
+                    "url": "https://github.com/rindow/rindow-event/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "rindow-stdlib": {
+            "dev-master": {
+                "name": "rindow/rindow-stdlib",
+                "type": "library",
+                "description": "Standard library for the rindow framework",
+                "keywords": [
+                    "rindow",
+                    "framework",
+                    "stdlib"
+                ],
+                "license": "BSD-3-Clause",
+                "require": {
+                    "php": ">=5.3.3"
+                },
+                "require-dev": {
+                    "rindow/rindow-container": "*"
+                },
+                "autoload": {
+                    "psr-0": {
+                        "Rindow\\Stdlib\\": "src/"
+                    }
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://rindow.github.io/rindow-packagist/packages.json",
+                        "options": {
+                            "ssl": {
+                                "verify_peer": "true"
+                            }
+                        }
+                    }
+                ],
+                "minimum-stability": "dev",
+                "version": "0.9.x-dev",
+                "dist": {
+                    "url": "https://github.com/rindow/rindow-stdlib/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "lenient-annotation": {
+            "dev-master": {
+                "name": "interop-phpobjects/lenient-annotation",
+                "type": "library",
+                "description": "Annotation reader interface and basic annotation set",
+                "keywords": [
+                    "annotation",
+                    "interoperability",
+                    "interop-annotation"
+                ],
+                "license": "MIT",
+                "require": {
+                    "php": ">=5.3.3"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Interop\\Lenient\\Annotation\\": "src/"
+                    }
+                },
+                "minimum-stability": "dev",
+                "version": "0.9.x-dev",
+                "dist": {
+                    "url": "https://github.com/interop-phpobjects/lenient-annotation/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "lenient-aop": {
+            "dev-master": {
+                "name": "interop-phpobjects/lenient-aop",
+                "type": "library",
+                "description": "AOP interface interoperability",
+                "keywords": [
+                    "aop",
+                    "interop",
+                    "interoperability"
+                ],
+                "license": "MIT",
+                "require": {
+                    "php": ">=5.3.3"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Interop\\Lenient\\Aop\\": "src/"
+                    }
+                },
+                "minimum-stability": "dev",
+                "version": "0.9.x-dev",
+                "dist": {
+                    "url": "https://github.com/interop-phpobjects/lenient-aop/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "lenient-container": {
+            "dev-master": {
+                "name": "interop-phpobjects/lenient-container",
+                "type": "library",
+                "description": "Container interface and annotation set",
+                "keywords": [
+                    "container",
+                    "interoperability",
+                    "interop-container"
+                ],
+                "license": "MIT",
+                "require": {
+                    "php": ">=5.3.3"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Interop\\Lenient\\Container\\": "src/"
+                    }
+                },
+                "minimum-stability": "dev",
+                "version": "0.9.x-dev",
+                "dist": {
+                    "url": "https://github.com/interop-phpobjects/lenient-container/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        }
+    }
+}
