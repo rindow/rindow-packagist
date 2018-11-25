@@ -48,7 +48,7 @@
             "dev-master": {
                 "name": "rindow/rindow-aop",
                 "type": "library",
-                "description": "Support Aspect Oriented Programming",
+                "description": "Support Aspect-Oriented Programming",
                 "keywords": [
                     "rindow",
                     "framework",
@@ -232,6 +232,56 @@
                 }
             }
         },
+        "rindow-transaction": {
+            "dev-master": {
+                "name": "rindow/rindow-transaction",
+                "type": "library",
+                "description": "Support transaction management",
+                "keywords": [
+                    "rindow",
+                    "framework",
+                    "transaction"
+                ],
+                "license": "BSD-3-Clause",
+                "require": {
+                    "php": ">=5.3.3",
+                    "interop-phpobjects/lenient-transaction": "*",
+                    "rindow/rindow-stdlib": "*"
+                },
+                "require-dev": {
+                    "interop-phpobjects/lenient-transaction": "*",
+                    "rindow/rindow-stdlib": "*",
+                    "rindow/rindow-annotation": "*",
+                    "rindow/rindow-aop": "*"
+                },
+                "suggest": {
+                    "rindow/rindow-aop": "When using on AOP",
+                    "rindow/rindow-annotation": "When using annotation"
+                },
+                "autoload": {
+                    "psr-0": {
+                        "Rindow\\Transaction\\": "src/"
+                    }
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://rindow.github.io/rindow-packagist/packages.json",
+                        "options": {
+                            "ssl": {
+                                "verify_peer": "true"
+                            }
+                        }
+                    }
+                ],
+                "minimum-stability": "dev",
+                "version": "0.9.x-dev",
+                "dist": {
+                    "url": "https://github.com/rindow/rindow-transaction/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        },
         "lenient-annotation": {
             "dev-master": {
                 "name": "interop-phpobjects/lenient-annotation",
@@ -309,6 +359,33 @@
                 "version": "0.9.x-dev",
                 "dist": {
                     "url": "https://github.com/interop-phpobjects/lenient-container/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "lenient-transaction": {
+            "dev-master": {
+                "name": "interop-phpobjects/lenient-transaction",
+                "type": "library",
+                "description": "transaction management interface interoperability",
+                "keywords": [
+                    "transaction",
+                    "interop",
+                    "interoperability"
+                ],
+                "license": "MIT",
+                "require": {
+                    "php": ">=5.3.3"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Interop\\Lenient\\Transaction\\": "src/"
+                    }
+                },
+                "minimum-stability": "dev",
+                "version": "0.9.x-dev",
+                "dist": {
+                    "url": "https://github.com/interop-phpobjects/lenient-transaction/archive/master.zip",
                     "type": "zip"
                 }
             }
