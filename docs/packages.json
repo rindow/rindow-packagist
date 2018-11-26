@@ -406,7 +406,7 @@
                 }
             }
         },
-        "rindow-persistence-ormshell---": {
+        "rindow-persistence-ormshell": {
             "dev-master": {
                 "name": "rindow/rindow-persistence-ormshell",
                 "type": "library",
@@ -442,7 +442,7 @@
                 },
                 "autoload": {
                     "psr-0": {
-                        "Rindow\\Persistence\\Ormshell\\": "src/"
+                        "Rindow\\Persistence\\OrmShell\\": "src/"
                     }
                 },
                 "repositories": [
