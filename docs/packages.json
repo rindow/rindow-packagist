@@ -200,6 +200,64 @@
                 }
             }
         },
+        "rindow-database-pdo": {
+            "dev-master": {
+                "name": "rindow/rindow-database-pdo",
+                "type": "library",
+                "description": "Database access support for PHP PDO",
+                "keywords": [
+                    "rindow",
+                    "framework",
+                    "pdo"
+                ],
+                "license": "BSD-3-Clause",
+                "require": {
+                    "php": ">=5.3.3",
+                    "interop-phpobjects/lenient-dao": "*",
+                    "rindow/rindow-database-dao": "*",
+                    "rindow/rindow-stdlib": "*"
+                },
+                "require-dev": {
+                    "interop-phpobjects/lenient-dao": "*",
+                    "rindow/rindow-stdlib": "*",
+                    "rindow/rindow-annotation": "*",
+                    "rindow/rindow-container": "*",
+                    "rindow/rindow-aop": "*",
+                    "rindow/rindow-messaging": "*",
+                    "rindow/rindow-transaction": "*",
+                    "rindow/rindow-persistence-orm": "*",
+                    "rindow/rindow-persistence-ormshell": "*"
+                },
+                "suggest": {
+                    "rindow/rindow-container": "It needs some service container",
+                    "rindow/rindow-transaction": "When using transaction",
+                    "rindow/rindow-messaging": "When using messaging service emulation on SQL services",
+                    "rindow/rindow-persistence-orm": "When using the ORM Persistences"
+                },
+                "autoload": {
+                    "psr-0": {
+                        "Rindow\\Database\\Pdo\\": "src/"
+                    }
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://rindow.github.io/rindow-packagist/packages.json",
+                        "options": {
+                            "ssl": {
+                                "verify_peer": "true"
+                            }
+                        }
+                    }
+                ],
+                "minimum-stability": "dev",
+                "version": "0.9.x-dev",
+                "dist": {
+                    "url": "https://github.com/rindow/rindow-database-pdo/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        },
         "rindow-event": {
             "dev-master": {
                 "name": "rindow/rindow-event",
@@ -291,6 +349,59 @@
                 "version": "0.9.x-dev",
                 "dist": {
                     "url": "https://github.com/rindow/rindow-messaging/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "rindow-persistence-orm": {
+            "dev-master": {
+                "name": "rindow/rindow-persistence-orm",
+                "type": "library",
+                "description": "ORM persistence support",
+                "keywords": [
+                    "rindow",
+                    "framework",
+                    "orm"
+                ],
+                "license": "BSD-3-Clause",
+                "require": {
+                    "php": ">=5.3.3",
+                    "interop-phpobjects/lenient-dao": "*",
+                    "rindow/rindow-stdlib": "*",
+                    "rindow/rindow-database-dao": "*"
+                },
+                "require-dev": {
+                    "interop-phpobjects/lenient-dao": "*",
+                    "rindow/rindow-stdlib": "*",
+                    "rindow/rindow-container": "*",
+                    "rindow/rindow-aop": "*",
+                    "rindow/rindow-transaction": "*"
+                },
+                "suggest": {
+                    "rindow/rindow-container": "It needs some service container",
+                    "rindow/rindow-transaction": "It needs some transaction manager",
+                    "rindow/rindow-persistence-ormshell": "It needs some orm manager"
+                },
+                "autoload": {
+                    "psr-0": {
+                        "Rindow\\Persistence\\Orm\\": "src/"
+                    }
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://rindow.github.io/rindow-packagist/packages.json",
+                        "options": {
+                            "ssl": {
+                                "verify_peer": "true"
+                            }
+                        }
+                    }
+                ],
+                "minimum-stability": "dev",
+                "version": "0.9.x-dev",
+                "dist": {
+                    "url": "https://github.com/rindow/rindow-persistence-orm/archive/master.zip",
                     "type": "zip"
                 }
             }
