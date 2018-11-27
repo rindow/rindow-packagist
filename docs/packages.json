@@ -464,6 +464,66 @@
                 }
             }
         },
+        "rindow-security-core": {
+            "dev-master": {
+                "name": "rindow/rindow-security-core",
+                "type": "library",
+                "description": "authentication and authorization security",
+                "keywords": [
+                    "rindow",
+                    "framework",
+                    "authentication",
+                    "authorization"
+                ],
+                "license": "BSD-3-Clause",
+                "require": {
+                    "php": ">=5.3.3",
+                    "interop-phpobjects/lenient-security": "*",
+                    "rindow/rindow-stdlib": "*"
+                },
+                "require-dev": {
+                    "interop-phpobjects/lenient-security": "*",
+                    "rindow/rindow-stdlib": "*",
+                    "rindow/rindow-container": "*",
+                    "rindow/rindow-annotation": "*",
+                    "rindow/rindow-transaction": "*",
+                    "rindow/rindow-database-dao": "*",
+                    "rindow/rindow-database-pdo": "*",
+                    "rindow/rindow-aop": "*"
+                },
+                "suggest": {
+                    "rindow/rindow-container": "It needs some service container",
+                    "rindow/rindow-aop": "When using insertion of access control",
+                    "rindow/rindow-annotation": "When using Annotation",
+                    "rindow/rindow-database-dao": "When using CrudRepositoryUserDetailsManager",
+                    "rindow/rindow-database-pdo": "When using SQL databases",
+                    "rindow/rindow-module-mongodb": "When using Mongodb etc.",
+                    "rindow/rindow-transaction": "When using transaction"
+                },
+                "autoload": {
+                    "psr-0": {
+                        "Rindow\\Security\\Core\\": "src/"
+                    }
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://rindow.github.io/rindow-packagist/packages.json",
+                        "options": {
+                            "ssl": {
+                                "verify_peer": "true"
+                            }
+                        }
+                    }
+                ],
+                "minimum-stability": "dev",
+                "version": "0.9.x-dev",
+                "dist": {
+                    "url": "https://github.com/rindow/rindow-security-core/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        },
         "rindow-stdlib": {
             "dev-master": {
                 "name": "rindow/rindow-stdlib",
@@ -551,6 +611,36 @@
                 "version": "0.9.x-dev",
                 "dist": {
                     "url": "https://github.com/rindow/rindow-transaction/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "travis-test": {
+            "dev-master": {
+                "name": "rindow/travis-test",
+                "type": "library",
+                "require": {
+                    "php": ">=5.3.3",
+                    "rindow/rindow-annotation": "*",
+                    "rindow/rindow-stdlib": "*",
+                    "rindow/rindow-database-pdo": "*",
+                    "rindow/rindow-transaction": "*"
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://rindow.github.io/rindow-packagist/packages.json",
+                        "options": {
+                            "ssl": {
+                                "verify_peer": "true"
+                            }
+                        }
+                    }
+                ],
+                "minimum-stability": "dev",
+                "version": "0.9.x-dev",
+                "dist": {
+                    "url": "https://github.com/rindow/travis-test/archive/master.zip",
                     "type": "zip"
                 }
             }
@@ -686,6 +776,33 @@
                 "version": "0.9.x-dev",
                 "dist": {
                     "url": "https://github.com/interop-phpobjects/lenient-messaging/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "lenient-security": {
+            "dev-master": {
+                "name": "interop-phpobjects/lenient-security",
+                "type": "library",
+                "description": "security interface interoperability",
+                "keywords": [
+                    "security",
+                    "interop",
+                    "interoperability"
+                ],
+                "license": "MIT",
+                "require": {
+                    "php": ">=5.3.3"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Interop\\Lenient\\Security\\": "src/"
+                    }
+                },
+                "minimum-stability": "dev",
+                "version": "0.9.x-dev",
+                "dist": {
+                    "url": "https://github.com/interop-phpobjects/lenient-security/archive/master.zip",
                     "type": "zip"
                 }
             }
