@@ -401,9 +401,48 @@
         },
         "rindow-module-yaml": {
             "dev-master": {
+                "name": "rindow/rindow-module-yaml",
+                "type": "library",
+                "description": "Yaml parser",
+                "keywords": [
+                    "rindow",
+                    "module",
+                    "yaml"
+                ],
+                "license": "BSD-3-Clause",
+                "require": {
+                    "php": ">=5.3.3",
+                    "rindow/rindow-stdlib": "*",
+                    "symfony/yaml": "*"
+                },
+                "require-dev": {
+                    "rindow/rindow-stdlib": "*",
+                    "rindow/rindow-container": "*",
+                    "symfony/yaml": "*"
+                },
+                "suggest": {
+                    "rindow/rindow-container": "It needs some service container"
+                },
+                "autoload": {
+                    "psr-0": {
+                        "Rindow\\Module\\Yaml\\": "src/"
+                    }
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://rindow.github.io/rindow-packagist/packages.json",
+                        "options": {
+                            "ssl": {
+                                "verify_peer": "true"
+                            }
+                        }
+                    }
+                ],
+                "minimum-stability": "dev",
                 "version": "0.9.x-dev",
                 "dist": {
-                    "url": "https://github.com//archive/master.zip",
+                    "url": "https://github.com/rindow/rindow-module-yaml/archive/master.zip",
                     "type": "zip"
                 }
             }
