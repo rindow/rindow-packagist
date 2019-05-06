@@ -9,4 +9,7 @@ return [
         ],
         'annotation_manager' => true,
     ],
+    'cache' => [
+        'filePath' => __DIR__.'/../cache',
+    ],
 ];

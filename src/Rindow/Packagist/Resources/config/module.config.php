@@ -1,5 +1,5 @@
 <?php
-use Rindow\Packagist\Builder;
+use Rindow\Packagist\Command\Builder;
 
 return [
     'console' => [

@@ -1,5 +1,5 @@
 <?php
-namespace Rindow\Packagist;
+namespace Rindow\Packagist\Command;
 
 use Interop\Lenient\Container\Annotation\Named;
 use Interop\Lenient\Container\Annotation\Inject;
