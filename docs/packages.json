@@ -816,6 +816,53 @@
                 }
             }
         },
+        "rindow-web-http": {
+            "dev-master": {
+                "name": "rindow/rindow-web-http",
+                "type": "library",
+                "description": "Http Message and Cookie",
+                "keywords": [
+                    "rindow",
+                    "framework",
+                    "web",
+                    "http",
+                    "message",
+                    "PSR-7"
+                ],
+                "license": "BSD-3-Clause",
+                "require": {
+                    "php": ">=5.3.3",
+                    "interop-phpobjects/lenient-web": "*",
+                    "rindow/rindow-stdlib": "*"
+                },
+                "require-dev": {
+                    "interop-phpobjects/lenient-web": "*",
+                    "rindow/rindow-stdlib": "*"
+                },
+                "autoload": {
+                    "psr-0": {
+                        "Rindow\\Web\\Http\\": "src/"
+                    }
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://rindow.github.io/rindow-packagist/packages.json",
+                        "options": {
+                            "ssl": {
+                                "verify_peer": "true"
+                            }
+                        }
+                    }
+                ],
+                "minimum-stability": "dev",
+                "version": "0.9.x-dev",
+                "dist": {
+                    "url": "https://github.com/rindow/rindow-web-http/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        },
         "travis-test": {
             "dev-master": {
                 "name": "rindow/travis-test",
@@ -846,7 +893,7 @@
                 }
             }
         },
-        "lenient-annotation": {
+        "enient-annotation": {
             "dev-master": {
                 "name": "interop-phpobjects/lenient-annotation",
                 "type": "library",
@@ -873,7 +920,7 @@
                 }
             }
         },
-        "lenient-aop": {
+        "enient-aop": {
             "dev-master": {
                 "name": "interop-phpobjects/lenient-aop",
                 "type": "library",
@@ -900,7 +947,7 @@
                 }
             }
         },
-        "lenient-container": {
+        "enient-container": {
             "dev-master": {
                 "name": "interop-phpobjects/lenient-container",
                 "type": "library",
@@ -927,7 +974,7 @@
                 }
             }
         },
-        "lenient-dao": {
+        "enient-dao": {
             "dev-master": {
                 "name": "interop-phpobjects/lenient-dao",
                 "type": "library",
@@ -954,7 +1001,7 @@
                 }
             }
         },
-        "lenient-messaging": {
+        "enient-messaging": {
             "dev-master": {
                 "name": "interop-phpobjects/lenient-messaging",
                 "type": "library",
@@ -981,7 +1028,7 @@
                 }
             }
         },
-        "lenient-security": {
+        "enient-security": {
             "dev-master": {
                 "name": "interop-phpobjects/lenient-security",
                 "type": "library",
@@ -1008,7 +1055,7 @@
                 }
             }
         },
-        "lenient-transaction": {
+        "enient-transaction": {
             "dev-master": {
                 "name": "interop-phpobjects/lenient-transaction",
                 "type": "library",
@@ -1035,7 +1082,7 @@
                 }
             }
         },
-        "lenient-validation": {
+        "enient-validation": {
             "dev-master": {
                 "name": "interop-phpobjects/lenient-validation",
                 "type": "library",
@@ -1062,7 +1109,7 @@
                 }
             }
         },
-        "lenient-web": {
+        "enient-web": {
             "dev-master": {
                 "name": "interop-phpobjects/lenient-web",
                 "type": "library",
