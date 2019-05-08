@@ -399,6 +399,61 @@
                 }
             }
         },
+        "rindow-module-smarty": {
+            "dev-master": {
+                "name": "rindow/rindow-module-smarty",
+                "type": "library",
+                "description": "Rindow compatible module for Smarty",
+                "keywords": [
+                    "rindow",
+                    "framework",
+                    "web",
+                    "view",
+                    "template",
+                    "smarty"
+                ],
+                "license": "BSD-3-Clause",
+                "require": {
+                    "php": ">=5.3.3",
+                    "smarty/smarty": "3.*"
+                },
+                "require-dev": {
+                    "smarty/smarty": "3.*",
+                    "rindow/rindow-stdlib": "*",
+                    "rindow/rindow-container": "*",
+                    "rindow/rindow-web-http": "*",
+                    "rindow/rindow-web-router": "*",
+                    "rindow/rindow-web-form": "*",
+                    "rindow/rindow-web-mvc": "*"
+                },
+                "suggest": {
+                    "rindow/rindow-web-mvc": "When using with rindow-web-mvc",
+                    "rindow/rindow-web-form": "When using web-form extensions"
+                },
+                "autoload": {
+                    "psr-0": {
+                        "Rindow\\Module\\Smarty\\": "src/"
+                    }
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://rindow.github.io/rindow-packagist/packages.json",
+                        "options": {
+                            "ssl": {
+                                "verify_peer": "true"
+                            }
+                        }
+                    }
+                ],
+                "minimum-stability": "dev",
+                "version": "0.9.x-dev",
+                "dist": {
+                    "url": "https://github.com/rindow/rindow-module-smarty/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        },
         "rindow-module-twig": {
             "dev-master": {
                 "name": "rindow/rindow-module-twig",
@@ -1031,6 +1086,53 @@
                 "version": "0.9.x-dev",
                 "dist": {
                     "url": "https://github.com/rindow/rindow-web-router/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "rindow-web-session": {
+            "dev-master": {
+                "name": "rindow/rindow-web-session",
+                "type": "library",
+                "description": "Rindow compatible PHP Session",
+                "keywords": [
+                    "rindow",
+                    "framework",
+                    "web",
+                    "session"
+                ],
+                "license": "BSD-3-Clause",
+                "require": {
+                    "php": ">=5.3.3",
+                    "rindow/rindow-stdlib": "*"
+                },
+                "require-dev": {
+                    "rindow/rindow-stdlib": "*",
+                    "rindow/rindow-container": "*"
+                },
+                "suggest": {
+                    "rindow/rindow-container": "It needs some service container"
+                },
+                "autoload": {
+                    "psr-0": {
+                        "Rindow\\Web\\Session\\": "src/"
+                    }
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://rindow.github.io/rindow-packagist/packages.json",
+                        "options": {
+                            "ssl": {
+                                "verify_peer": "true"
+                            }
+                        }
+                    }
+                ],
+                "minimum-stability": "dev",
+                "version": "0.9.x-dev",
+                "dist": {
+                    "url": "https://github.com/rindow/rindow-web-session/archive/master.zip",
                     "type": "zip"
                 }
             }
