@@ -399,6 +399,58 @@
                 }
             }
         },
+        "rindow-module-leagueoauth2": {
+            "dev-master": {
+                "name": "rindow/rindow-module-leagueoauth2",
+                "type": "library",
+                "description": "Rindow compatible module for the League OAuth2 client",
+                "keywords": [
+                    "rindow",
+                    "framework",
+                    "league",
+                    "oauth2",
+                    "client"
+                ],
+                "license": "BSD-3-Clause",
+                "require": {
+                    "php": ">=5.4.0",
+                    "psr/http-message": "^1.0",
+                    "league/oauth2-client": "*"
+                },
+                "require-dev": {
+                    "rindow/rindow-stdlib": "*",
+                    "league/oauth2-client": "*",
+                    "league/oauth2-google": "*",
+                    "league/oauth2-facebook": "*"
+                },
+                "suggest": {
+                    "league/oauth2-google": "If It use google's authentication",
+                    "league/oauth2-facebook": "If It use facebook's authentication"
+                },
+                "autoload": {
+                    "psr-0": {
+                        "Rindow\\Module\\LeagueOAuth2\\": "src/"
+                    }
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://rindow.github.io/rindow-packagist/packages.json",
+                        "options": {
+                            "ssl": {
+                                "verify_peer": "true"
+                            }
+                        }
+                    }
+                ],
+                "minimum-stability": "dev",
+                "version": "0.9.x-dev",
+                "dist": {
+                    "url": "https://github.com/rindow/rindow-module-leagueoauth2/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        },
         "rindow-module-mongodb": {
             "dev-master": {
                 "name": "rindow/rindow-module-mongodb",
@@ -426,7 +478,8 @@
                     "rindow/rindow-transaction": "*",
                     "rindow/rindow-database-dao": "*",
                     "rindow/rindow-persistence-orm": "*",
-                    "rindow/rindow-persistence-ormshell": "*"
+                    "rindow/rindow-persistence-ormshell": "*",
+                    "rindow/rindow-security-core": "*"
                 },
                 "suggest": {
                     "rindow/rindow-container": "It needs some service container",
@@ -454,6 +507,51 @@
                 "version": "0.9.x-dev",
                 "dist": {
                     "url": "https://github.com/rindow/rindow-module-mongodb/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "rindow-module-monolog": {
+            "dev-master": {
+                "name": "rindow/rindow-module-monolog",
+                "type": "library",
+                "description": "Rindow compatible module for Monolog",
+                "keywords": [
+                    "rindow",
+                    "framework",
+                    "log",
+                    "monolog"
+                ],
+                "license": "BSD-3-Clause",
+                "require": {
+                    "php": ">=5.3.3",
+                    "monolog/monolog": "*",
+                    "rindow/rindow-container": "*"
+                },
+                "require-dev": {
+                    "monolog/monolog": "*",
+                    "rindow/rindow-container": "*"
+                },
+                "autoload": {
+                    "psr-0": {
+                        "Rindow\\Module\\Monolog\\": "src/"
+                    }
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://rindow.github.io/rindow-packagist/packages.json",
+                        "options": {
+                            "ssl": {
+                                "verify_peer": "true"
+                            }
+                        }
+                    }
+                ],
+                "minimum-stability": "dev",
+                "version": "0.9.x-dev",
+                "dist": {
+                    "url": "https://github.com/rindow/rindow-module-monolog/archive/master.zip",
                     "type": "zip"
                 }
             }
@@ -509,6 +607,59 @@
                 "version": "0.9.x-dev",
                 "dist": {
                     "url": "https://github.com/rindow/rindow-module-smarty/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "rindow-module-stomp": {
+            "dev-master": {
+                "name": "rindow/rindow-module-stomp",
+                "type": "library",
+                "description": "Rindow compatible module for STOMP Protocol",
+                "keywords": [
+                    "rindow",
+                    "framework",
+                    "messaging",
+                    "stomp",
+                    "ActiveMQ"
+                ],
+                "license": "BSD-3-Clause",
+                "require": {
+                    "php": ">=5.3.3",
+                    "interop-phpobjects/lenient-messaging": "*"
+                },
+                "require-dev": {
+                    "interop-phpobjects/lenient-messaging": "*",
+                    "rindow/rindow-messaging": "*",
+                    "rindow/rindow-container": "*",
+                    "rindow/rindow-transaction": "*",
+                    "rindow/rindow-stdlib": "*"
+                },
+                "suggest": {
+                    "rindow/rindow-container": "It needs some service container",
+                    "rindow/rindow-messaging": "When it use on the managed transactional messaging interface",
+                    "rindow/rindow-transaction": "When it use on the managed transactional messaging interface"
+                },
+                "autoload": {
+                    "psr-0": {
+                        "Rindow\\Module\\Stomp\\": "src/"
+                    }
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://rindow.github.io/rindow-packagist/packages.json",
+                        "options": {
+                            "ssl": {
+                                "verify_peer": "true"
+                            }
+                        }
+                    }
+                ],
+                "minimum-stability": "dev",
+                "version": "0.9.x-dev",
+                "dist": {
+                    "url": "https://github.com/rindow/rindow-module-stomp/archive/master.zip",
                     "type": "zip"
                 }
             }
@@ -1145,6 +1296,69 @@
                 "version": "0.9.x-dev",
                 "dist": {
                     "url": "https://github.com/rindow/rindow-web-router/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "rindow-web-security": {
+            "dev-master": {
+                "name": "rindow/rindow-web-security",
+                "type": "library",
+                "description": "Apply authentication, access control, etc. to the web",
+                "keywords": [
+                    "rindow",
+                    "framework",
+                    "web",
+                    "security"
+                ],
+                "license": "BSD-3-Clause",
+                "require": {
+                    "php": ">=5.3.3",
+                    "psr/http-message": "^1.0",
+                    "interop-phpobjects/lenient-security": "*",
+                    "rindow/rindow-stdlib": "*",
+                    "rindow/rindow-security-core": "*",
+                    "rindow/rindow-web-mvc": "*"
+                },
+                "require-dev": {
+                    "rindow/rindow-stdlib": "*",
+                    "rindow/rindow-container": "*",
+                    "rindow/rindow-aop": "*",
+                    "rindow/rindow-annotation": "*",
+                    "rindow/rindow-security-core": "*",
+                    "rindow/rindow-validation": "*",
+                    "rindow/rindow-web-form": "*",
+                    "rindow/rindow-web-http": "*",
+                    "rindow/rindow-web-router": "*",
+                    "rindow/rindow-web-view": "*",
+                    "rindow/rindow-web-session": "*",
+                    "rindow/rindow-web-mvc": "*"
+                },
+                "suggest": {
+                    "rindow/rindow-container": "It needs some service container",
+                    "rindow/rindow-web-router": "Web routing engine for Web-MVC framework",
+                    "rindow/rindow-user-core": "Simplified version user management tool"
+                },
+                "autoload": {
+                    "psr-0": {
+                        "Rindow\\Web\\Security\\": "src/"
+                    }
+                },
+                "repositories": [
+                    {
+                        "type": "composer",
+                        "url": "https://rindow.github.io/rindow-packagist/packages.json",
+                        "options": {
+                            "ssl": {
+                                "verify_peer": "true"
+                            }
+                        }
+                    }
+                ],
+                "minimum-stability": "dev",
+                "version": "0.9.x-dev",
+                "dist": {
+                    "url": "https://github.com/rindow/rindow-web-security/archive/master.zip",
                     "type": "zip"
                 }
             }
